@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard
+    </title>
+  </head>
+  <body>
+     <!------------------------------------SIDE BAR---------------------------------------------------------->
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img class="logo_img" src="./assets/logo2.png" alt="">
+        </div>
+        <div class="imagen__content">
+            <img src="https://static.abc.es/media/MM/2021/11/10/PaulRudd-k2bE--1296x900@abc.jpg" alt="foto">
+            <h5 class="text-center text-white w-30 mt-3 mb-0">Edward Wang</h5>
+            <small class="text-center text-white">Administrador del sistema</small>
+            <hr class="espaciadora w-50 mx-auto mt-2 fw-bold">
+        </div>
+      </div>
+      
+      <i class="bx bx-menu" id="btn-menu"></i>
+
+      <ul class="list p-0 m-0">
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-home pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Inicio</a>
+              </div>
+          </li>
+
+          <li class="list__item list__item--click">
+              <div class="list__button list__button--click">
+                  <i class='bx bxs-book pe-2  ps-3'></i>
+                  <a href="#" class="nav__link">Catálogos</a>
+                  <img src="assets/arrow.svg" class="list__arrow">
+              </div>
+
+              <ul class="list__show">
+                  <li class="list__inside list__inside--click">
+                      <div class="list__button--inside list__button--inside-click d-flex justify-content-start align-items-center me-3">
+                        <i class="fas fa-minus"></i>
+                        <a href="#" class="nav__link nav__link--inside mx-0 flex-grow-1">Aplicaciones</a>
+                        <i class='bx bxs-plus-square'></i>
+                      </div>
+                      <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Aplicaciones</a></li>
+                        <li class="py-1"><a href="">Módulos</a></li>
+                        <li class="py-1"><a href="">Módulos por perfil</a></li>
+                        <li class="py-1"><a href="">Procesos</a></li>
+                        <li class="py-1"><a href="">Perfiles</a></li>
+                        <li class="py-1"><a href="">Lectoras</a></li>
+                        <li class="py-1"><a href="">Horarios</a></li>
+                        <li class="py-1"><a href="">Archivos</a></li>
+                        <li class="py-1"><a href="">Listas</a></li>
+                      </ul>
+                  </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Generales</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Estado civil</a></li>
+                        <li class="py-1"><a href="">Tipos de identidad</a></li>
+                        <li class="py-1"><a href="">Parámetros</a></li>
+                        <li class="py-1"><a href="">Tipos de teléfonos</a></li>
+                        <li class="py-1"><a href="">Género sexual</a></li>
+                        <li class="py-1"><a href="">Estatus</a></li>
+                        <li class="py-1"><a href="">Tipos de email</a></li>
+                        <li class="py-1"><a href="">Nivel académico</a></li>
+                        <li class="py-1"><a href="">Tipos de contactos</a></li>
+                        <li class="py-1"><a href="">Tipo de sangre</a></li>
+                        <li class="py-1"><a href="">Campo de Estudio</a></li>
+                        <li class="py-1"><a href="">Lenguaje</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Ubicación</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Paises</a></li>
+                        <li class="py-1"><a href="">Provincia</a></li>
+                        <li class="py-1"><a href="">Distritos</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Estructura</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Estructura organizacional</a></li>
+                        <li class="py-1"><a href="">Departamentos</a></li>
+                        <li class="py-1"><a href="">Áreas</a></li>
+                        <li class="py-1"><a href="">Cargos</a></li>
+                        <li class="py-1"><a href="">Gremios</a></li>
+                        <li class="py-1"><a href="">Institución</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Reglas de Negocio</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Actividades o proyectos</a></li>
+                        <li class="py-1"><a href="">Objetos de gastos</a></li>
+                        <li class="py-1"><a href="">Tipo de presupuesto</a></li>
+                        <li class="py-1"><a href="">Programas</a></li>
+                        <li class="py-1"><a href="">Subprograma</a></li>
+                        <li class="py-1"><a href="">Motivo de bonificaciones</a></li>
+                        <li class="py-1"><a href="">Fuente de financiamiento</a></li>
+                        <li class="py-1"><a href="">Escalas</a></li>
+                    </ul>
+                </li>
+                
+              </ul>
+
+          </li>
+
+          <li class="list__item list__item--click">
+              <div class="list__button list__button--click">
+                  <i class='bx bxs-detail pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Logs</a>
+                  <img src="assets/arrow.svg" class="list__arrow">
+              </div>
+
+              <ul class="list__show">
+
+                  <li class="list__inside d-flex align-items-center">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside">Detalle</a>
+                  </li>
+
+                  <li class="list__inside d-flex align-items-center">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside">Sincronización</a>
+                  </li>
+              </ul>
+
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-bookmark pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Análisis de Marcaje</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class="fas fa-users pe-2 ps-3"></i>
+                  <a href="#" class="nav__link">Empleados</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-like pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Acuerdos de Gremios</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-briefcase-alt pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Administración</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-bar-chart-alt-2 pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Proyecciones</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bxs-report pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Reportes</a>
+              </div>
+          </li>
+
+      </ul>
+    </div>
+   <!-----------------------------------CONTENEDOR-BODY--------------------------------------------------------->
+    <div class="home_content">
+  <!-------------------------------- BARRA DE NAVEGACIÓN------------------------------------------------------>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="#">Dashboard</a>
+          <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+            </ul>
+            <div class="home-navbar_right d-flex align-items-center me-4">
+                <ul id="lista" class="navbar-nav mx-2">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Español
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/usa2.png"/><a class=" pt-2 dropdown-item" href="#">English</a></li>
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/spain.png"/><a class="pt-2 dropdown-item" href="#">Spain</a></li>
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/japan.png"/><a class="pt-2 dropdown-item" href="#">Japanese</a></li>
+                      <li class="d-flex justify-content-between container mb-2"><img class="banderas" src="./assets/france.png"/><a class="pt-2 dropdown-item" href="#">France</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <i class='bx bx-power-off me-3 text-dark'></i>
+                <i class='bx bxs-user text-dark'></i>
+                
+                
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+  <!---------------------------------CONTENIDO PRINCIPAL------------------------------------------------------->
+      <div id="content" class="pt-3 pb-5">
+        <div class="content_container">
+  <!---------------------------------TITULO / MIGAS DE PAN---------------------------------------------------->
+          <h2 class="content__titulo">Bienvenido Edward Wang</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing<span class="ms-2"><a class="text-primary" href="">Ver más</a></span></p>
+  <!----------------------------------  MINI TARJETAS----------------------------------------------------------->
+          <div class="row mb-4">
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class="bx bx-group fs-1 mb-2"></i>
+                        <a href=""class="">Empleados</a>
+                    </div>
+                    
+                </div>    
+            </div>
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class="bx bx-briefcase-alt fs-1 mb-2"></i>
+                        <a href=""class="">Administración</a>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class='bx bx-calendar-minus fs-1 mb-2' ></i>
+                        <a href=""class="">Proyecciones</a>
+
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class="bx bx-bookmark fs-1 mb-2"></i>
+                        <a href=""class="">Análisis de marcaje</a>
+                        
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class="bx bx-list-ul fs-1 mb-2"></i>
+                        <a href=""class="">Catálogos</a>
+                        
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="card__dashboard ">
+                    <div class="tarjeta">
+                        <i class='bx bx-pie-chart-alt fs-1 mb-2'></i>
+                        <a href=""class="">Reportes</a>
+    
+                    </div>
+                    
+                </div>
+              </div>
+          </div>
+          
+          <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card__estadistica">
+                 <div class=" container d-flex justify-content-between align-items-center">
+                    <h6 class="mt-3">Estadísticas de Trabajadores</h6>
+                    <div class="mt-2 d-flex align-items-center">
+                        <small class="text-secondary me-2">Comparación con mes anterior</small>
+                        <i class="fas fa-toggle-on text-success fs-2"></i>
+                    </div>
+                    
+                 </div>
+                 <div  class="container">
+                    <canvas id="trabajadores" style="width:200px; height:100px"></canvas>
+                </div>
+                <div class="container pt-2 d-flex">
+                    <button class="btn btn-success text-white rounded-pill btn-sm "><small>Generar Reporte</small></button>
+                    <div class="d-flex flex-column ms-3">
+                        <small class="fs-8 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing </small>
+                        <a class="text-primary fs-8" href="">Ver mas</a>
+                    </div>
+                    
+                </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="card__logs">
+                    <div class="container">
+                        <h6 class="pt-3">Logs recientes</h6>
+                        <div class="table-responsive">
+                        <table class="table table-borderless mt-3">
+                            <thead>
+                                <tr>
+                                  <th class="text-secondary" style="width:180px"scope="col-8">Etiqueta</th>
+                                  <th class="text-secondary" style="width:120px"scope="col-2">Fecha</th>
+                                  <th class="text-secondary" style="width: 60px"scope="col-2">Miembro</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                  <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                  <td><small class="text-secondary">Only You</small></td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="d-flex"><div style="width:20px;height:20px;border-radius:4px;" class="text-white me-3 bg-primary"><small style="font-size:7px;display:block;margin:0 auto;line-height: 3;padding-left:2px;">New</small></div><small class="text secondary">Loremp ipsum</small></td>
+                                    <td><small class="text-secondary">Nov 11 2021 | 12:54</small></td>
+                                    <td><small class="text-secondary">Only You</small></td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-8">
+                <div class="card__empleado">
+                    <h6 class=" container pt-3">Empleados</h6>
+                    <div class="container">
+                        <table  class="table ">
+                            <thead class="table-light text-secondary fs-6 fw-normal">
+                                <tr >
+                                  <th class="py-3" scope="col">#</th>
+                                  <th  class="py-3"scope="col">Nombre</th>
+                                  <th  class="py-3"scope="col">Equipo</th>
+                                  <th class="py-3" scope="col">Proyecto</th>
+                                  <th  class="py-3"scope="col">Estado</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  
+                                  <td class="py-3">#AD1245</td>
+                                  <td class="py-3">Hilda Wallace</td>
+                                  <td  class="py-3" style="position:relative">
+                                    
+                                    <i style="opacity:0.5   ;  position:absolute; top:13px; left:0px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                    <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                    <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'><span style="font-size:15px; color:black;" class=" text-dark">+2</span></i></td>
+                                  <td class="py-3">Lorem Ipsum</td>
+                                  <td class="py-3"><i style="opacity:0.6; cursor:pointer" class='bx bxs-circle text-primary me-2'></i>Activo</td>
+                                </tr>
+                                <tr>
+                                  
+                                    <td class="py-3">#AD1245</td>
+                                    <td class="py-3">Hilda Wallace</td>
+                                    <td  class="py-3" style="position:relative">
+                                      
+                                      <i style="opacity:0.5   ;  position:absolute; top:13px; left:0px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'><span style="font-size:15px; color:black;" class=" text-dark">+2</span></i></td>
+                                    <td class="py-3">Lorem Ipsum</td>
+                                    <td class="py-3"><i style="opacity:0.6; cursor:pointer" class='bx bxs-circle text-primary me-2'></i>Activo</td>
+                                  </tr>
+                                  <tr>
+                                  
+                                    <td class="py-3">#AD1245</td>
+                                    <td class="py-3">Hilda Wallace</td>
+                                    <td  class="py-3" style="position:relative">
+                                      
+                                      <i style="opacity:0.5   ;  position:absolute; top:13px; left:0px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'><span style="font-size:15px; color:black;" class=" text-dark">+2</span></i></td>
+                                    <td class="py-3">Lorem Ipsum</td>
+                                    <td class="py-3"><i style="opacity:0.6; cursor:pointer" class='bx bxs-circle text-primary me-2'></i>Activo</td>
+                                  </tr>
+                                  <tr>
+                                  
+                                    <td class="py-3">#AD1245</td>
+                                    <td class="py-3">Hilda Wallace</td>
+                                    <td  class="py-3" style="position:relative">
+                                      
+                                      <i style="opacity:0.5   ;  position:absolute; top:13px; left:0px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'>
+                                      <i style="opacity:1; position:absolute; top:0px; left:15px; cursor:pointer" class='bx bxs-circle fs-3 text-secondary   me-2'><span style="font-size:15px; color:black;" class=" text-dark">+2</span></i></td>
+                                    <td class="py-3">Lorem Ipsum</td>
+                                    <td class="py-3"><i style="opacity:0.6; cursor:pointer" class='bx bxs-circle text-primary me-2'></i>Activo</td>
+                                  </tr>
+                                
+                              </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card__calendario">
+                    <h6 class=" container pt-3 text-white">Calendario</h6>
+                    <ul class="m-0 p-0">
+                        <li class=" pb-2 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>Día</small><small>Mes</small><small>Año</small></li>
+                        <li class=" lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                        <li class="lista__calendar py-1 d-flex justify-content-around"style="list-style: none; color:rgb(255,255,255,0.6)"><small>24</small><small>01</small><small>2022</small></li>
+                    </ul>
+                    
+                </div>
+              </div>
+          </div>
+
+          
+
+
+          
+        </div>
+        
+
+      </div>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+    
+  </body>
+  
+</html>

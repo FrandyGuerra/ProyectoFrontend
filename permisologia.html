@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Permisología</title>
+  </head>
+  <body>
+      <!------------------------------------SIDE BAR---------------------------------------------------------->
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <img class="logo_img" src="./assets/logo2.png" alt="">
+        </div>
+        <div class="imagen__content">
+            <img src="https://static.abc.es/media/MM/2021/11/10/PaulRudd-k2bE--1296x900@abc.jpg" alt="foto">
+            <h5 class="text-center text-white w-30 mt-3 mb-0">Edward Wang</h5>
+            <small class="text-center text-white">Administrador del sistema</small>
+            <hr class="espaciadora w-50 mx-auto mt-2 fw-bold">
+        </div>
+      </div>
+      
+      <i class="bx bx-menu" id="btn-menu"></i>
+
+      <ul class="list p-0 m-0">
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-home pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Inicio</a>
+              </div>
+          </li>
+
+          <li class="list__item list__item--click">
+              <div class="list__button list__button--click">
+                  <i class='bx bxs-book pe-2  ps-3'></i>
+                  <a href="#" class="nav__link">Catálogos</a>
+                  <img src="assets/arrow.svg" class="list__arrow">
+              </div>
+
+              <ul class="list__show">
+                  <li class="list__inside list__inside--click">
+                      <div class="list__button--inside list__button--inside-click d-flex justify-content-start align-items-center me-3">
+                        <i class="fas fa-minus"></i>
+                        <a href="#" class="nav__link nav__link--inside mx-0 flex-grow-1">Aplicaciones</a>
+                        <i class='bx bxs-plus-square'></i>
+                      </div>
+                      <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Aplicaciones</a></li>
+                        <li class="py-1"><a href="">Módulos</a></li>
+                        <li class="py-1"><a href="">Módulos por perfil</a></li>
+                        <li class="py-1"><a href="">Procesos</a></li>
+                        <li class="py-1"><a href="">Perfiles</a></li>
+                        <li class="py-1"><a href="">Lectoras</a></li>
+                        <li class="py-1"><a href="">Horarios</a></li>
+                        <li class="py-1"><a href="">Archivos</a></li>
+                        <li class="py-1"><a href="">Listas</a></li>
+                      </ul>
+                  </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Generales</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Estado civil</a></li>
+                        <li class="py-1"><a href="">Tipos de identidad</a></li>
+                        <li class="py-1"><a href="">Parámetros</a></li>
+                        <li class="py-1"><a href="">Tipos de teléfonos</a></li>
+                        <li class="py-1"><a href="">Género sexual</a></li>
+                        <li class="py-1"><a href="">Estatus</a></li>
+                        <li class="py-1"><a href="">Tipos de email</a></li>
+                        <li class="py-1"><a href="">Nivel académico</a></li>
+                        <li class="py-1"><a href="">Tipos de contactos</a></li>
+                        <li class="py-1"><a href="">Tipo de sangre</a></li>
+                        <li class="py-1"><a href="">Campo de Estudio</a></li>
+                        <li class="py-1"><a href="">Lenguaje</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Ubicación</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Paises</a></li>
+                        <li class="py-1"><a href="">Provincia</a></li>
+                        <li class="py-1"><a href="">Distritos</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Estructura</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Estructura organizacional</a></li>
+                        <li class="py-1"><a href="">Departamentos</a></li>
+                        <li class="py-1"><a href="">Áreas</a></li>
+                        <li class="py-1"><a href="">Cargos</a></li>
+                        <li class="py-1"><a href="">Gremios</a></li>
+                        <li class="py-1"><a href="">Institución</a></li>
+                    </ul>
+                    
+                </li>
+
+                <li class="list__inside list__inside--click">
+                    <div class="list__button--inside list__button--inside-click d-flex justify-content-between align-items-center me-3">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside flex-grow-1">Reglas de Negocio</a>
+                      <i class='bx bxs-plus-square'></i>
+                    </div>
+                    <ul class="list__show--secundario">
+                        <li class="py-1"><a href="">Actividades o proyectos</a></li>
+                        <li class="py-1"><a href="">Objetos de gastos</a></li>
+                        <li class="py-1"><a href="">Tipo de presupuesto</a></li>
+                        <li class="py-1"><a href="">Programas</a></li>
+                        <li class="py-1"><a href="">Subprograma</a></li>
+                        <li class="py-1"><a href="">Motivo de bonificaciones</a></li>
+                        <li class="py-1"><a href="">Fuente de financiamiento</a></li>
+                        <li class="py-1"><a href="">Escalas</a></li>
+                    </ul>
+                </li>
+                
+              </ul>
+
+          </li>
+
+          <li class="list__item list__item--click">
+              <div class="list__button list__button--click">
+                  <i class='bx bxs-detail pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Logs</a>
+                  <img src="assets/arrow.svg" class="list__arrow">
+              </div>
+
+              <ul class="list__show">
+
+                  <li class="list__inside d-flex align-items-center">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside">Detalle</a>
+                  </li>
+
+                  <li class="list__inside d-flex align-items-center">
+                      <i class="fas fa-minus"></i>
+                      <a href="#" class="nav__link nav__link--inside">Sincronización</a>
+                  </li>
+              </ul>
+
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-bookmark pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Análisis de Marcaje</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class="fas fa-users pe-2 ps-3"></i>
+                  <a href="#" class="nav__link">Empleados</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-like pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Acuerdos de Gremios</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-briefcase-alt pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Administración</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bx-bar-chart-alt-2 pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Proyecciones</a>
+              </div>
+          </li>
+
+          <li class="list__item">
+              <div class="list__button">
+                  <i class='bx bxs-report pe-2 ps-3'></i>
+                  <a href="#" class="nav__link">Reportes</a>
+              </div>
+          </li>
+
+      </ul>
+    </div>
+    <!-----------------------------------CONTENEDOR-BODY--------------------------------------------------------->
+    <div class="home_content">
+    <!-------------------------------- BARRA DE NAVEGACIÓN------------------------------------------------------>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="#">Dashboard</a>
+          <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+            </ul>
+            <div class="home-navbar_right d-flex align-items-center me-4">
+                <ul id="lista" class="navbar-nav mx-2">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Español
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/usa2.png"/><a class=" pt-2 dropdown-item" href="#">English</a></li>
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/spain.png"/><a class="pt-2 dropdown-item" href="#">Spain</a></li>
+                      <li class="d-flex justify-content-between container"><img class="banderas" src="./assets/japan.png"/><a class="pt-2 dropdown-item" href="#">Japanese</a></li>
+                      <li class="d-flex justify-content-between container mb-2"><img class="banderas" src="./assets/france.png"/><a class="pt-2 dropdown-item" href="#">France</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <i class='bx bx-power-off me-3 text-dark'></i>
+                <i class='bx bxs-user text-dark'></i>
+                
+                
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    <!---------------------------------CONTENIDO PRINCIPAL------------------------------------------------------->
+      <div id="content" class="pt-3 pb-3">
+        <div class="content_container">
+    <!---------------------------------TITULO / MIGAS DE PAN---------------------------------------------------->
+          <h2 class="content__titulo">Módulos por perfil</h2>
+          <div style="height:40px" class="rutas d-flex justify-content-between align-items-center mb-4">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mt-4">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Catálogos</a></li>
+                <li class="breadcrumb-item"><a href="#">Aplicación</a></li>
+                <li class="breadcrumb-item" aria-current="page">Módulos por perfil</li>
+              </ol>
+            </nav>
+          </div>
+    <!-------------------------------CARD CON FORMULARIO SELECT--------------------------------------------------------->
+          <div class="card mb-5">
+            <div class="card__encabezado mb-3 d-flex justify-content-between align-items-center">
+              <div class="card__encabezado--left d-flex align-items-center">
+                <i class='bx bx-list-ul text-dark fs-2 ms-4'></i>
+                <p class="ms-3 mt-2 pt-2">Lista de Módulos por perfil</p>
+              </div>
+              <div class="card__encabezado--right me-4">
+                <i style="opacity:0.7; cursor:pointer" class='bx bxs-circle text-success'></i>
+                <i style="opacity:0.7 ; cursor:pointer" class='bx bxs-circle text-warning'></i>
+                <i style="opacity:0.7; cursor:pointer"class='bx bxs-circle text-danger'></i>
+              </div>             
+            </div>
+    
+            <div class="container">
+                <label class="mb-2 fw-bold" for="select">Perfiles</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>AdminDePrueba</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+          </div>
+    <!------------------------------------PERMISOLOGÍA------------------------------------------------->
+          <div class="card">
+            <div class="card__encabezado mb-3 d-flex justify-content-between align-items-center">
+              <div class="card__encabezado--left d-flex align-items-center">
+                <i class='bx bx-list-ul text-dark fs-2 ms-4'></i>
+                <p class="ms-3 mt-2 pt-2">Permisología</p>
+              </div>
+              <div class="card__encabezado--right me-4">
+                <i style="opacity:0.7; cursor:pointer" class='bx bxs-circle text-success'></i>
+                <i style="opacity:0.7 ; cursor:pointer" class='bx bxs-circle text-warning'></i>
+                <i style="opacity:0.7; cursor:pointer"class='bx bxs-circle text-danger'></i>
+              </div>
+            </div>
+            <div class="card__content container">
+                <div class="border border-dark d-inline-block px-1 rounded-2">
+                    <i class='bx bxs-folder-open text-dark'></i> <span>Sistema de Recursos Humanos</span>
+                </div>
+                <ul class="list__primary ms-2 ps-0">
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Inicio
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Panel de Control
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                        </ul>
+
+
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Catálogos
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <ul style="margin-left:30px" class="list__primary ps-0">
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Aplicacion
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Aplicaciones
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Módulos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Módulos por perfil
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Procesos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Perfiles
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Lectoras
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Horarios
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Archivos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Listas
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+
+                        </ul>
+                        
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Generales
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Estado Civil
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipos de identidad
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Parámetros
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipos de telefono
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Género sexual
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Estatus
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipos de email
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Nivel académico
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipo de Contacto
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipo de sangre
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Campo de Estudio
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Lenguaje
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+
+                        </ul>
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Ubicación
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Países
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Provincias
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Distritos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                        </ul>
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Estructura
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Estructura organizacional
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Departamentos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Áreas
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Cargos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                       Gremios
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Institución
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+
+                        </ul>
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Reglas de negocio
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <ul style="margin-left:30px" class="list__primary ps-0">
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Actividades o proyectos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Objeto de gastos
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Tipo de presupuesto
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Programas
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Subprograma
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Mótivo de bonificaciones
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Fuente de financiamiento
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li class="pt-3 d-flex align-items-center">
+                                <hr class="linea-horizontal me-0">
+                                <div class="border border-dark d-inline-block px-1 rounded-2">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Escalas
+                                        </label>
+                                    </div>
+                                </div>   
+                            </li>
+
+                        </ul>
+                    </ul>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Logs
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <ul style="margin-left:30px" class="list__primary ps-0">
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Detalle
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                        <li class="pt-3 d-flex align-items-center">
+                            <hr class="linea-horizontal me-0">
+                            <div class="border border-dark d-inline-block px-1 rounded-2">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    Sincronización
+                                    </label>
+                                </div>
+                            </div>   
+                        </li>
+                    </ul>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Análisis de marcaje
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Empleados
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Acuerdos de Gremio
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Administración
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Proyecciones
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="pt-3 d-flex align-items-center">
+                        <hr class="linea-horizontal me-0">
+                        <div class="border border-dark d-inline-block px-1 rounded-2">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                Reportes
+                                </label>
+                            </div>
+                        </div>   
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    
+  </body>
+  
+</html>
